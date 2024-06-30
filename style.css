@@ -1,0 +1,74 @@
+:root {
+  --primary-background: linear-gradient(to right, #fad0c4 0%, #ffd1ff 100%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-background);
+}
+
+.file-form-wrapper {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.file-form {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.file-form-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.input-wrapper > label {
+  flex: none;
+  margin-right: 10px;
+}
+
+.input-wrapper > input {
+  width: 100%;
+}
+
+#file-name {
+  border-radius: 5px;
+  border: 1px solid #ff60ff;
+  padding: 2px 5px;
+}
+
+#change-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary-background);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: filter 0.5s;
+}
+
+#change-btn:hover {
+  filter: brightness(0.9);
+}
